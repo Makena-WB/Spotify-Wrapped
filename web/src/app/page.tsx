@@ -7,34 +7,34 @@ export default function Home() {
     <main className="min-h-screen bg-[rgb(18,18,18)] flex flex-col items-center justify-center p-6 relative overflow-hidden">
       {/* Background accent elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-[rgb(67,151,117)] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-[rgb(224,186,215)] rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[rgb(42,71,71)] rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-96 h-96 bg-[rgb(67,151,117)] rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-[rgb(224,186,215)] rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[rgb(42,71,71)] rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
       {/* Hero Section */}
-      <section className="text-center mb-12 relative z-10">
-        <h1 className="text-6xl md:text-7xl font-black text-white mb-4 tracking-tight">
+      <section className="text-center mb-16 relative z-10">
+        <h1 className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tight leading-none">
           Your 2025
-          <span className="block text-[rgb(67,151,117)] text-balance">Wrapped</span>
+          <span className="block text-[rgb(67,151,117)] text-balance drop-shadow-2xl">Wrapped</span>
         </h1>
-        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto text-pretty leading-relaxed">
+        <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto text-pretty leading-relaxed font-medium">
           Dive deep into your year in music. Discover your top artists, songs, listening habits, and the moments that
           defined your soundtrack.
         </p>
         <Button
           size="lg"
-          className="bg-[rgb(67,151,117)] text-black font-bold text-lg px-8 py-4 rounded-full shadow-2xl hover:bg-[rgb(87,171,137)] hover:scale-105 transition-all duration-300 border-0"
+          className="bg-[rgb(67,151,117)] text-black font-bold text-lg px-10 py-5 rounded-full shadow-2xl hover:bg-[rgb(87,171,137)] hover:scale-105 hover:shadow-[0_0_30px_rgba(67,151,117,0.4)] transition-all duration-300 border-0"
         >
           Get Started
         </Button>
       </section>
 
       {/* Category Navigation */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl relative z-10">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl relative z-10">
         <Link href="/artists" className="group">
-          <Card className="bg-[rgb(42,71,71)] border-0 hover:bg-[rgb(52,81,81)] transition-all duration-300 cursor-pointer group-hover:scale-105 shadow-xl">
-            <CardHeader className="pb-3">
+          <Card className="bg-[rgb(42,71,71)] border-0 hover:bg-[rgb(52,81,81)] transition-all duration-300 cursor-pointer group-hover:scale-105 group-hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-[rgb(42,71,71)]/20 h-full">
+            <CardHeader className="pb-4">
               <CardTitle className="text-white text-xl font-bold">Top Artists</CardTitle>
             </CardHeader>
             <CardContent>
@@ -44,8 +44,8 @@ export default function Home() {
         </Link>
 
         <Link href="/songs" className="group">
-          <Card className="bg-[rgb(67,151,117)] border-0 hover:bg-[rgb(87,171,137)] transition-all duration-300 cursor-pointer group-hover:scale-105 shadow-xl">
-            <CardHeader className="pb-3">
+          <Card className="bg-[rgb(67,151,117)] border-0 hover:bg-[rgb(87,171,137)] transition-all duration-300 cursor-pointer group-hover:scale-105 group-hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-[rgb(67,151,117)]/20 h-full">
+            <CardHeader className="pb-4">
               <CardTitle className="text-black text-xl font-bold">Top Songs</CardTitle>
             </CardHeader>
             <CardContent>
@@ -55,8 +55,8 @@ export default function Home() {
         </Link>
 
         <Link href="/habits" className="group">
-          <Card className="bg-[rgb(224,186,215)] border-0 hover:bg-[rgb(234,196,225)] transition-all duration-300 cursor-pointer group-hover:scale-105 shadow-xl">
-            <CardHeader className="pb-3">
+          <Card className="bg-[rgb(224,186,215)] border-0 hover:bg-[rgb(234,196,225)] transition-all duration-300 cursor-pointer group-hover:scale-105 group-hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-[rgb(224,186,215)]/20 h-full">
+            <CardHeader className="pb-4">
               <CardTitle className="text-black text-xl font-bold">Listening Habits</CardTitle>
             </CardHeader>
             <CardContent>
@@ -66,8 +66,8 @@ export default function Home() {
         </Link>
 
         <Link href="/sessions" className="group">
-          <Card className="bg-[rgb(30,30,30)] border border-gray-700 hover:bg-[rgb(40,40,40)] hover:border-[rgb(67,151,117)] transition-all duration-300 cursor-pointer group-hover:scale-105 shadow-xl">
-            <CardHeader className="pb-3">
+          <Card className="bg-[rgb(30,30,30)] border border-gray-700 hover:bg-[rgb(40,40,40)] hover:border-[rgb(67,151,117)] transition-all duration-300 cursor-pointer group-hover:scale-105 group-hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-[rgb(67,151,117)]/10 h-full">
+            <CardHeader className="pb-4">
               <CardTitle className="text-white text-xl font-bold">Longest Sessions</CardTitle>
             </CardHeader>
             <CardContent>

@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Category Navigation */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl relative z-10">
-        <Link href="/artists" className="group">
+        <Link href="/Artists" className="group">
           <Card className="bg-[rgb(42,71,71)] border-0 hover:bg-[rgb(52,81,81)] transition-all duration-300 cursor-pointer group-hover:scale-105 shadow-xl">
             <CardHeader className="pb-3">
               <CardTitle className="text-white text-xl font-bold">Top Artists</CardTitle>
